@@ -1,0 +1,94 @@
+body{
+		margin-right:2%;
+		margin-left:3%;
+}
+
+#button{
+		margin-top: 5%;
+	}
+.configuration{
+		border: 3px solid #0000aa;
+		padding: 40px;
+		border-radius: 10px;
+	}
+.protocol{
+		margin-top: 10px;
+		border: 3px solid #0000aa;
+		border-radius:10px;
+		padding: 5px;
+	}
+.legend{
+		margin-top: 1%;
+		border: 3px solid #0000aa;
+		padding:10px;
+		border-radius: 10px;
+	}
+.packet{
+		width:20px;
+		height:30px;
+		background-color:#00adef;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 0;
+	}
+.packetSender{
+		width:20px;
+		height:30px;
+		background-color:#00adef;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 2;
+	}
+.packetReceiver{
+		width:20px;
+		height:30px;
+		background-color:#FFFFFF;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 2;
+	}
+.ack{
+		width:20px;
+		height:30px;
+		background-color:green;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 0;
+	}
+.receivedData{
+		width:20px;
+		height:30px;
+		background-color:#000055;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 2;
+	}
+.ackReceived{
+		width:20px;
+		height:30px;
+		background-color:yellow;
+		margin-right: 10px;
+		border: thin solid black;
+		position: absolute;
+		top: 0px;
+		z-index: 2;
+	}
+.window{
+		position:absolute;
+		width: 115px;
+		background-color: grey;
+		z-index:1;
+		height:37px;
+		top: -3px;
+		left: -2px;
+	}

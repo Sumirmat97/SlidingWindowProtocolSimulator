@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<script type="text/javascript" src="js/paper-full.min.js"></script>
+<script type="text/javascript">
+	paper.install(window);
+	
+	window.onload = function() {
+		paper.setup('myCanvas');
+
+		// Setup directly from canvas id:
+	paper.setup('myCanvas');
+
+	var myCircle = new Path.Circle(new Point(100, 70), 50);
+	myCircle.strokeColor = 'pink';
+	myCircle.fillColor = "pink";
+	
+	view onFrame = function()
+	{
+		
+	}
+	view.draw();
+}
+	
+</script>
+</head>
+<body>	<canvas id="myCanvas" resize="true"></canvas>
+</body>
+</html>
