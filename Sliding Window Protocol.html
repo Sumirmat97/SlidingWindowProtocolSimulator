@@ -90,29 +90,13 @@
 					
 					timer = {}
 					var limit = getWindowSize();
-					
- /*
-	view.onMouseDown = function(event) {
-        packet.forEach(function (e) {
-            console.log(e);
-            /*if(Math.abs(e.path.position.x-event.point.x)<20)
-                if(Math.abs(e.path.position.y-event.point.y)<30)
-                {   
-                    e.path.position.x=-15;
-                    packet = packet.filter(item => item !== e);
-                }
-        },this);
-    } 
-	*/
+	
 					view.onFrame = function (event)
 					{	
 							for(i=0;i<limit;i++)
 							{
-								//i=((event.time*fps)/freq)%limit;
-								//console.log(i+" "+ c);
-								//console.log(receiverFrame[c+i].position.y +" "+ i.toString());
 								if(isInside(c+i))
-								{//console.log(senderFrame[0].position.y);
+								{
 									if(senderFrame[c+i].position.y == 25)
 									{ 
 										timer[c+i] = Timeout;
@@ -121,7 +105,7 @@
 										time[c+i] = event.time;
 									}
 									
-									if(senderFrame[c+i].position.y < 285 && acknowlegedData[c+i] == 0)
+									if(Math.random() <= 0.95 && senderFrame[c+i].position.y < 285 && acknowlegedData[c+i] == 0)
 										senderFrame[c+i].position.y += 4.333/e2eDelay;
 
 									if(receivedData[c+i] == 0 && senderFrame[c+i].position.y >= 285) //received for the first time
@@ -133,7 +117,7 @@
 										moveReceiverWindow(c+i);
 									}
 									
-									if(acknowlegedData[c+i] == 0 && receivedData[c+i] == 1 && receiverFrame[c+i].position.y > 25 )
+									if( Math.random() <= 0.95 && acknowlegedData[c+i] == 0 && receivedData[c+i] == 1 && receiverFrame[c+i].position.y > 25 )
 									{
 										receiverFrame[c+i].position.y -= 4.333/e2eDelay;
 									}
